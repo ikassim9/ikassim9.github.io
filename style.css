@@ -19,6 +19,10 @@
 header {
   background-color: var(--primary);
   padding: 14px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  
 }
 nav {
   display: flex;
@@ -108,9 +112,10 @@ ul {
   background-color: var(--primary);
   padding: 10px;
   border-radius: 5px;
+  width: 100px;
 }
 
-.code a{
+.code span, i{
 color: #FFF;
 }
 
@@ -124,3 +129,9 @@ color: #FFF;
     margin-top: 10px;
     margin-right: 10px;
 }
+
+ .card-container h3 {
+    font-size: 22px;
+ 
+ 
+ }
