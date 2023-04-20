@@ -77,8 +77,8 @@ ul {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 1rem;
   margin-top: 1rem;
  
 }
@@ -108,7 +108,7 @@ ul {
 .live {
   display: inline-block;
   background-color: var(--secondary);
-  padding: 10px;
+  padding: 0.6rem;
   border-radius: 5px;
   width: 100px;
   text-align: center;
@@ -116,9 +116,9 @@ ul {
 .code {
   display: inline-block;
   background-color: var(--primary);
-  padding: 10px;
+  padding: 0.6rem;
   border-radius: 5px;
-  width: 100px;
+  width: 7rem;
 }
 
 .code span, i{
@@ -144,4 +144,6 @@ color: #FFF;
 
  /* media query */
 
- 
+ /* @media (min-width:) {
+
+ } */
