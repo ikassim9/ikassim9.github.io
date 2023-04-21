@@ -21,6 +21,7 @@ body {
   padding: 5rem;
 }
 
+
 header {
   background-color:  var(--primary);
   padding: 14px;
@@ -136,6 +137,7 @@ i {
   font-size: 22px;
 }
 
+ 
 .mobile-nav {
   display: none;
 }
@@ -177,6 +179,19 @@ i {
   .mobile-nav[aria-expanded="true"]{
 
     background-image: url('assets/xmark-solid.svg');
+}
+
+.container {
+  margin-top: 1rem;
+  padding: 2rem;
+  font-size: 20px;
+}
+#about br {
+  display: none;
+}
+
+#about h3 {
+  margin-bottom: 10px;
 }
 
 }
