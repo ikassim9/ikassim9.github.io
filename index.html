@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,22 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/484373b6ae.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <title>Ismail Kassim</title>
+    <script src="nav.js" defer></script>
 </head>
+
 <body>
- 
+
     <header>
         <nav class="site-nav grid">
-          <a id="logo" href="">IK</a>
+            <div> <a id="logo" href="">IK</a></div>
 
-            <ul>
+            <button class="mobile-nav" aria-controls="primary-nav" aria-expanded="false"><span
+                    class="sr-only">Menu</span></button>
+
+            <ul id="primary-nav" class="primary-nav" data-visible="false">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -26,103 +32,129 @@
     </header>
     <div class="container">
 
-    <section id="about">
-        <div>
-            <h1>Ismail Kassim</h1>
-             <h3>Software Developer</h3>
-             <br>
-             <p>I am a software developer who loves to <br> 
-                build things</p>
+        <section id="about">
+            <div>
+                <h1>Ismail Kassim</h1>
+                <h3>Software Developer</h3>
+                <br>
+                <p>I am a software developer who loves to <br>
+                    build things</p>
                 <!-- <a href="#projects">View my work</a>  -->
-         <div class="icons">
-           
-             <a href="https://github.com/ikassim9" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
-            <a href="https://www.linkedin.com/in/ikassim9/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-            <!-- <a href="#projects">View my work</a> -->
-        </div>  
+                <div class="icons">
 
-       
-        </div>
-      
-    </section>
+                    <a href="https://github.com/ikassim9" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                    <a href="https://www.linkedin.com/in/ikassim9/" target="_blank"><i
+                            class="fa-brands fa-linkedin fa-xl"></i></a>
+                    <!-- <a href="#projects">View my work</a> -->
+                </div>
 
-    <!-- <br><br><br>
+
+            </div>
+
+        </section>
+
+        <!-- <br><br><br>
     <section id="about">
         <h3>About Me</h3>
        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam corporis repellendus fugit ipsam! Est consequuntur quaerat vero, minima doloribus impedit deleniti ad sapiente aliquid iste, molestias ut perferendis maxime repudiandae?</p>
   </section>  -->
-  
-   
 
- 
-<!--     
+
+
+
+        <!--     
     <section id="about">
          <h3>About Me</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam corporis repellendus fugit ipsam! Est consequuntur quaerat vero, minima doloribus impedit deleniti ad sapiente aliquid iste, molestias ut perferendis maxime repudiandae?</p>
    </section> -->
 
- 
-    <section id="projects">
-        <h1>Projects</h1>
 
-        <div class="card-container">
-            <div class="card">
-                <img src="images/project1.png">
-                <h3>Task Manager</h3>
-                <i class="fa-brands fa-android fa-xl" style="color: #008040;" title="Android Studio"></i>
-              
-             
-                <p>Android application allows you to create, update and delete task items. Built using MVVM architecture and Kotlin</p>
-                <div class="button-container">
-                   <a class="live" href="#"><span>Live</span> <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
-                    <a class="code" href="https://github.com/ikassim9/Notes-app" target="_blank"><span>Code</span>  <i class="fa-brands fa-github fa-xl"></i></a>
-                   
+        <section id="projects">
+            <h1>Projects</h1>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="assets/project1.png">
+                    <h3>Task Manager</h3>
+                    <i class="fa-brands fa-android fa-xl" style="color: #008040;" title="Android Studio"></i>
+
+
+                    <p>Android application allows you to create, update and delete task items. Built using MVVM
+                        architecture and Kotlin</p>
+                    <div class="button-container">
+                        <a class="live" href="#"><span>Live</span> <svg stroke="currentColor" fill="none"
+                                stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg></a>
+                        <a class="code" href="https://github.com/ikassim9/Notes-app" target="_blank"><span>Code</span>
+                            <i class="fa-brands fa-github fa-xl"></i></a>
+
+                    </div>
                 </div>
-            </div>
 
-              <div class="card">
-                <img src="images/project2.png" alt=""> 
-                <h3>Marvel Comics</h3>
-                <div class="tags">
+                <div class="card">
+                    <img src="assets/project2.png" alt="">
+                    <h3>Marvel Comics</h3>
+                    <div class="tags">
+                        <i class="fa-brands fa-html5  fa-xl" style="color: red;" title="Html"></i>
+                        <i class="fa-brands fa-css3-alt fa-xl" style="color: blue" title="Css"></i>
+                        <i class="fa-brands fa-square-js fa-xl" style="color: green;" title="Javascript"></i>
+                        <i class="fa-brands fa-node fa-2xl" style="color: #0080ff;" title="Node JS"></i>
+                    </div>
+
+                    <p>This application allows users to search for a Marvel comic character. It fetches the character
+                        and every comic that character is featured in. It displays this data in a grid fashion.</p>
+                    <div class="button-container">
+
+
+                        <a class="live" href="#"><span>Live</span> <svg stroke="currentColor" fill="none"
+                                stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg></a>
+                        <a class="code" href="https://github.com/ikassim9/Marvel-Comics"
+                            target="_blank"><span>Code</span> <i class="fa-brands fa-github fa-xl"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="assets/project3.png" alt="">
+                    <br>
+                    <h3>Gis Map</h3>
+
                     <i class="fa-brands fa-html5  fa-xl" style="color: red;" title="Html"></i>
                     <i class="fa-brands fa-css3-alt fa-xl" style="color: blue" title="Css"></i>
                     <i class="fa-brands fa-square-js fa-xl" style="color: green;" title="Javascript"></i>
-                    <i class="fa-brands fa-node fa-2xl" style="color: #0080ff;" title="Node JS"></i>
+                    <p>A gis application that displays data of minnesota. You are able to click on a marker and get
+                        information such as city name, zipcode and population.</p>
+                    <div class="button-container">
+                        <a class="live" href="#"><span>Live</span> <svg stroke="currentColor" fill="none"
+                                stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg></a>
+                        <a class="code" href="https://github.com/ikassim9/GIS " target="_blank"><span>Code</span> <i
+                                class="fa-brands fa-github fa-xl"></i></a>
+                    </div>
+
+
                 </div>
-         
-                <p>This application allows users to search for a Marvel comic character. It fetches the character and every comic that character is featured in. It displays this data in a grid fashion.</p>
-                <div class="button-container">
-            
-                    
-                    <a class="live" href="#"><span>Live</span> <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
-                    <a class="code" href="https://github.com/ikassim9/Marvel-Comics" target="_blank"><span>Code</span>  <i class="fa-brands fa-github fa-xl"></i></a>
-                </div>
+
+
             </div>
+        </section>
 
 
-            <div class="card">
-                <img src="images/project3.png" alt="">
-                <br>
-                <h3>Gis Map</h3>
- 
-                <i class="fa-brands fa-html5  fa-xl" style="color: red;" title="Html"></i>
-                <i class="fa-brands fa-css3-alt fa-xl" style="color: blue" title="Css"></i>
-                <i class="fa-brands fa-square-js fa-xl" style="color: green;" title="Javascript"></i>
-                <p>A gis application that displays data of minnesota. You are able to click on a marker and get information such as city name, zipcode and population.</p>
-                <div class="button-container">
-                    <a class="live" href="#"><span>Live</span> <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
-                    <a class="code" href="https://github.com/ikassim9/GIS " target="_blank"><span>Code</span>  <i class="fa-brands fa-github fa-xl"></i></a>
-                </div>
-                
-              
-            </div> 
-            
-             
-        </div>
-    </section>    
-    
-
-</div>
+    </div>
 
 </body>
+
 </html>
