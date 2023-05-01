@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <title>Ismail Kassim</title>
-    <script src="nav.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -37,37 +37,20 @@
                 <h1>Ismail Kassim</h1>
                 <h3>Software Developer</h3>
                 <br>
-                <p>I am a software developer who loves to <br>
-                    build things</p>
-                <!-- <a href="#projects">View my work</a>  -->
+                <p>I am a Computer Science student who loves to build things</p>
                 <div class="icons">
-
-                    <a href="https://github.com/ikassim9" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
-                    <a href="https://www.linkedin.com/in/ikassim9/" target="_blank"><i
+                    <a href="https://github.com/ikassim9" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #000;"></i></a>
+                    <a href="https://www.linkedin.com/in/ikassim9/" target="_blank"><i  style="color: #000;"
                             class="fa-brands fa-linkedin fa-xl"></i></a>
-                    <!-- <a href="#projects">View my work</a> -->
-                </div>
+                 </div>
 
 
             </div>
 
+
+            
+
         </section>
-
-        <!-- <br><br><br>
-    <section id="about">
-        <h3>About Me</h3>
-       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam corporis repellendus fugit ipsam! Est consequuntur quaerat vero, minima doloribus impedit deleniti ad sapiente aliquid iste, molestias ut perferendis maxime repudiandae?</p>
-  </section>  -->
-
-
-
-
-        <!--     
-    <section id="about">
-         <h3>About Me</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam corporis repellendus fugit ipsam! Est consequuntur quaerat vero, minima doloribus impedit deleniti ad sapiente aliquid iste, molestias ut perferendis maxime repudiandae?</p>
-   </section> -->
-
 
         <section id="projects">
             <h1>Projects</h1>
@@ -151,8 +134,35 @@
 
             </div>
         </section>
+    <section id="contact">
+        <div id="form-container">
+            <h1>Get in touch</h1>
 
+        <form id="contact-form" action="https://formspree.io/f/xqkonpbw" method="post">
+        <input type="hidden" name="_subject" value="Personal portfolio inquiry">
+        <label for="name">Name</label>
 
+        <input name="name" type="text" id="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input  name="email" type="email" id="email" placeholder="youremail@gmail.com" required>
+
+        <label for="message">Message</label>
+        <textarea name="message" type="text" id="message" placeholder="Your message" required></textarea>
+
+        <button type="submit" id="submit-btn">Send</button>
+
+        </form>
+         </div>
+    </section> 
+
+        <footer>
+
+            <div class="icons">
+            <a href="https://github.com/ikassim9" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+            <a href="https://www.linkedin.com/in/ikassim9/" target="_blank"><i
+                    class="fa-brands fa-linkedin fa-xl"></i></a>
+        </div></footer>
     </div>
 
 </body>
